@@ -1,5 +1,5 @@
 body {
-    background: rgb(34, 34, 34);
+    background-color: rgb(48, 48, 48);
     color: white;
     font-family: Helvetica Neue, Helvetica, Arial;
     margin: 0;
@@ -7,38 +7,53 @@ body {
 }
 
 header {
-    background: black;
-    padding: 20px 40px;
-}
-
-section {
-    background: rgb(34, 34, 34);
-    color: white;
     padding: 20px;
+    background-color: rgb(32, 32, 32);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Helvetica;
+    font-size: 20px;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+header nav ul {
     list-style-type: none;
 }
 
-a {
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+header nav ul a:hover {
+    background-color: rgb(64, 64, 64);
 }
 
-li {
+header .logo {
+    background-image: url("images/ceakii-logo.png");
+    background-repeat: no-repeat;
+    background-size: 130px;
+    height: 60px;
+    width: 130px;
+    text-indent: -999999px;
+}
+
+header .logo:hover {
+    background-color: rgb(64, 64, 64);
+}
+
+section {
+    padding: 20px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
     display: inline-block;
-    margin-right: 20px;
-}
-
-footer {
-    background: black;
-    padding: 10px 20px;
 }
