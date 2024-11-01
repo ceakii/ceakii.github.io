@@ -1,58 +1,104 @@
+:root {
+    --borderColor: rgb(255, 200, 0);
+    --paragraphColor: white;
+}
+
 body {
-    background-color: rgb(48, 48, 48);
-    color: white;
-    font-family: Roboto, Open Sans, Montserrat;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
+    background-color: #1C1C1E;
+
+    font-family: Roboto, Open Sans, Montserrat;
 }
 
 header {
-    padding: 20px;
-    background-color: rgb(128, 128, 128);
+    width: 100vw;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div {
+    width: 100vw;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: Helvetica;
-    font-size: 20px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+    color: var(--paragraphColor);
 }
 
-header nav ul {
-    list-style-type: none;
+header div .logo {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 5%;
+    border-color: var(--borderColor);
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+header div a {
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
     text-decoration: none;
+    color: var(--paragraphColor)
 }
 
-header nav ul a:hover {
-    background-color: rgb(64, 64, 64);
+header div .logo:hover {
+    background-color: rgb(164, 164, 164);
 }
 
-header .logo {
-    background-image: url("images/ceakii-logo.png");
-    background-repeat: no-repeat;
-    background-size: 130px;
-    height: 60px;
-    width: 130px;
-    text-indent: -999999px;
+header div nav {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
 }
 
-header .logo:hover {
-    background-color: rgb(64, 64, 64);
+header div nav div {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-radius: 5%;
+    border-color: var(--borderColor);
 }
 
-section {
-    padding: 20px;
-    background-color: rgb(48, 48, 48);
-    color: white;
+header div nav div a {
+    font-size: larger;
+    text-decoration: none;
+    color: var(--paragraphColor)
 }
 
-section ul {
-    padding-left: 10;
+header div nav div:hover {
+    background-color: rgb(164, 164, 164);
+}
+
+body section {
+    margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: var(--paragraphColor);
 }
 
 body section h1 {
-    font-size: 1000;
+    color: rgb(255, 200, 0);
+    font-size: xx-large;
 }
