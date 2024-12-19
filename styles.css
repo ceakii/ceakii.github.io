@@ -111,3 +111,7 @@ body section h1 {
     color: rgb(255, 200, 0);
     font-size: xx-large;
 }
+
+body section div img {
+    width: 80vw;
+}
