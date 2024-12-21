@@ -115,3 +115,7 @@ body section h1 {
 body section div img {
     width: 80vw;
 }
+
+body section div {
+    padding-bottom: 75px;
+}
