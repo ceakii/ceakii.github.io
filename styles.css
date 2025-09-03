@@ -112,6 +112,11 @@ body section h1 {
     font-size: xx-large;
 }
 
+body section h2 {
+    color: rgb(255, 200, 0);
+    font-size: large;
+}
+
 body section div img {
     width: 80vw;
 }
